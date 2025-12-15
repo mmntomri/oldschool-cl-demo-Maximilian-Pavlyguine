@@ -1,2 +1,18 @@
-name: Bau und Test des Projekts
-
+name: build_and_test
+on:
+  push:
+    branches: ["main"]
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+steps:
+  name: Repo auschecken
+  run: 
+  name: Docker installieren
+  run:
+  name: Docker_image bauen
+  run:
+  name: Container starten
+  run:
+  name: Ausgabe testen
+  run:
