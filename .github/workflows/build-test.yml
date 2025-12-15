@@ -12,10 +12,10 @@ jobs:
       - name: Repo auschecken
         uses: actions/checkout@v4
 
-      - name: Docker installieren
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io
+      #- name: Docker installieren
+      #  run: |
+      #    sudo apt-get update
+      #    sudo apt-get install -y docker.io
           
       - name: Docker-Image bauen
         run: docker build -t oldschool-demo-image-max .
