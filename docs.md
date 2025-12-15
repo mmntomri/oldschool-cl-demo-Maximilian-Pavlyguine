@@ -11,3 +11,5 @@ Was war für dich der schwierigste Teil dieser Aufgabe und warum?
 An sich ist es nicht schwer, jedoch muss man die Befehle kennen und sehr genau arbeiten. 
 Ich hatte zb in meinem Echo ein Leerzeichen zu viel, deswegen funktionierte es nicht.
 Es ist sehr gut, dass man das so direkt praktisch mal macht, so hat man erste Erfolge und versteh besser wofür wir das machen und brauchen.
+
+Meine Pipeline läuft bei push und pull_request auf main.
