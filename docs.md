@@ -12,4 +12,17 @@ An sich ist es nicht schwer, jedoch muss man die Befehle kennen und sehr genau a
 Ich hatte zb in meinem Echo ein Leerzeichen zu viel, deswegen funktionierte es nicht.
 Es ist sehr gut, dass man das so direkt praktisch mal macht, so hat man erste Erfolge und versteh besser wofür wir das machen und brauchen.
 
+Bonus 1:
 Meine Pipeline läuft bei push und pull_request auf main.
+
+Bonus 2:
+
+Bonus 3:
+Warum sind automatische Pipelines sinnvoll?
+-Änderungen automatisch getestet werden und aufgebaut.
+-es einfacher und schneller geht als manuell zu testen.
+-weniger menschliche Fehler passieren.
+-stellt sicher, dass das Projekt funktionsfähig ist.
+
+Wo siehst du CI/CD in echten Projekten?
+Ich würde sagen überall wo an Projekten, egal ob WebApp, Spiele usw, da es Qualität, Kosten und Zeit positiv beeinflusst.
