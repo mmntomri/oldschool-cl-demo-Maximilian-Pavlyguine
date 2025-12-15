@@ -1,18 +1,35 @@
 name: build_and_test
+
 on:
   push:
     branches: ["main"]
+
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
-steps:
-  name: Repo auschecken
-  run: 
-  name: Docker installieren
-  run:
-  name: Docker_image bauen
-  run:
-  name: Container starten
-  run:
-  name: Ausgabe testen
-  run:
+
+    steps:
+      - name: Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: Docker installieren
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io
+          
+      - name: Docker-Image bauen
+        run: docker build -t oldschool-demo-image-max .
+
+      - name: Container starten
+        run: docker run --name oldschool-test-container oldschool-demo-image-max
+        
+      - name: Ausgabe testen
+        run: |
+          output=$(docker run oldschool-demo-image-max)
+          echo "$output"
+          if [ "$output" != "OldSchool GmbH – automatischer Build erfolgreich! (Max M.)" ]; then
+            echo "❌ Test fehlgeschlagen!"
+            exit 1
+          fi
+          echo "✅ Test erfolgreich!"
+
